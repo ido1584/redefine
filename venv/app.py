@@ -20,7 +20,7 @@ def get_latest_block_height() -> int:
 def find_block_height(timestamp: int) -> int:
   """Finds the height of the block in the blockchain which has the biggest
   timestamp out of all the blocks whose timestamp is smaller then the input,
-  if none exist returns  -1.
+  if none exist returns  -1..
   Method uses binary search heuristic.
   """
   if timestamp < GENESIS_BLOCK_TS_SECONDS:
